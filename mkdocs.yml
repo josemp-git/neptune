@@ -25,6 +25,8 @@ nav:
     - Inicio: index.md
     - 1. Preparación del ambiente: setup.md
     - 2. Cargar datos en Neptune: cargardatos.md
+    - 3. Conectarse a su instancia Neptune: connect.md
+    - 4. Hacer consultas: query.md
 theme:
   name: 'material'
   palette:

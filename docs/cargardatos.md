@@ -1,6 +1,8 @@
-### 1. Cargar datos en Neptune desde S3
-
 1. Descargue los siguientes archivos:
+
+* [**vertex.txt**](http://neptune.oldschool.cloud/vertex.txt)
+
+* [**edges.txt**](http://neptune.oldschool.cloud/edges.txt)
 
 2. Diríjase a la consola de AWS y haga click en **_Services_** y posteriormente seleccione el servicio de [**_S3_**](https://s3.console.aws.amazon.com/) el cual se encuentra bajo la categoría de **_Storage_** (**_https://s3.console.aws.amazon.com/_**).
 3. Haga clicl en el bucket que creó anteriormente.
@@ -21,7 +23,7 @@
 
 * ***your-neptune-endpoint*** - *DBInstanceEndpoint* 
 * ***arn:aws:iam::account-id:role/role-name*** - *NeptuneLoadFromS3IAMRoleArn*
-    * (estos datos los obtiene de la sección de Outputs de la plantilla de CloudFormation que lanzó al inicio)
+    * Estos datos los obtiene de la sección de Outputs de la plantilla de CloudFormation que lanzó al inicio.
 * ***your-s3-bucket*** - *el nombre de su bucket*
 
 ```
@@ -40,7 +42,8 @@ Si todo fue ejecutado correctamente deberá ver un mensaja de ***"status" : "200
 
 !["status" : "200 OK"](images/status200ok.png)
 
-12. Tambié puede verificar el status de su carga ejecutando el siguiente comando sustituyendo ***your-neptune-endpoint*** por el valor de ***DBInstanceEndpoint*** y ***[loadId value]*** por el valor de ***loadId*** del comando que ejecutó anteriormente:
+12. De la ejecución del comando anterior, guarde el valor de ***"loadId"***.
+13. Verifique el status de su carga ejecutando el siguiente comando sustituyendo ***your-neptune-endpoint*** por el valor de ***DBInstanceEndpoint*** y ***[loadId value]*** por el valor de ***loadId*** del comando que ejecutó anteriormente:
 
 ```
 curl http://your-neptune-endpoint:8182/loader?loadId=[loadId value]
