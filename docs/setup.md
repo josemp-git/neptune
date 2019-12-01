@@ -40,6 +40,7 @@ https://s3.amazonaws.com/aws-neptune-customer-samples/v2/cloudformation-template
 16.	En la siguiente pantalla seleccione las casillas de:
 
 **I acknowledge that AWS CloudFormation might create IAM resources with custom names.**
+
 **I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND**
 
 17.	Haga click en **_Create stack_**.
