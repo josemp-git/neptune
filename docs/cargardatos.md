@@ -1,8 +1,8 @@
 1. Descargue los siguientes archivos:
 
-* [**vertex.txt**](http://neptune.oldschool.cloud/vertex.txt)
+      * [**vertex.txt**](http://neptune.oldschool.cloud/vertex.txt)
 
-* [**edges.txt**](http://neptune.oldschool.cloud/edges.txt)
+      * [**edges.txt**](http://neptune.oldschool.cloud/edges.txt)
 
 2. Diríjase a la consola de AWS y haga click en **_Services_** y posteriormente seleccione el servicio de [**_S3_**](https://s3.console.aws.amazon.com/) el cual se encuentra bajo la categoría de **_Storage_** (**_https://s3.console.aws.amazon.com/_**).
 3. Haga clicl en el bucket que creó anteriormente.
