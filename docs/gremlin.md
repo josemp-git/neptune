@@ -1,6 +1,6 @@
 En este módulo, usted recorrerá las preferencias de juegos de consola entre un pequeño conjunto de jugadores y juegos. Explorará los puntos en común, las preferencias y hará posibles recomendaciones de juegos. Estas consultas tienen el propósito de aprender Gremlin y Amazon Neptune.
 
-![Graph](images/graph.png)
+![Graph](images/graph.jpg)
 
 1. Consulta para un vértice particular (jugador):
 
@@ -41,8 +41,11 @@ g.E().limit(5)
 g.V().limit(4)
 ```
 > ==>v[Luke]
+
 > ==>v[Emma]
+
 > ==>v[Lina]
+
 > ==>v[Mike]
 
 4. Cuente la centralidad en grados de los bordes entrantes para cada vértice:
@@ -67,22 +70,38 @@ g.V().project("v","degree").by().by(bothE().count()).order().by(select("degree")
 ```
 
 > ==>{v=v[Luke], degree=9}
-==>{v=v[Mike], degree=9}
-==>{v=v[Lina], degree=6}
-==>{v=v[Ratchet&Clank], degree=3}
-==>{v=v[SuperMarioOdyssey], degree=3}
-==>{v=v[MarioKart8], degree=3}
-==>{v=v[Emma], degree=2}
-==>{v=v[HorizonZeroDawn], degree=2}
-==>{v=v[GranTurismoSport], degree=2}
-==>{v=v[GravityRush], degree=2}
-==>{v=v[TombRaider], degree=2}
-==>{v=v[Knack], degree=2}
-==>{v=v[ARMS], degree=2}
-==>{v=v[Mario+Rabbids], degree=2}
-==>{v=v[Fifa18], degree=1}
-==>{v=v[Nioh], degree=1}
-==>{v=v[CallOfDutyBO4], degree=1}
+
+> ==>{v=v[Mike], degree=9}
+
+> ==>{v=v[Lina], degree=6}
+
+> ==>{v=v[Ratchet&Clank], degree=3}
+
+> ==>{v=v[SuperMarioOdyssey], degree=3}
+
+> ==>{v=v[MarioKart8], degree=3}
+
+> ==>{v=v[Emma], degree=2}
+
+> ==>{v=v[HorizonZeroDawn], degree=2}
+
+> ==>{v=v[GranTurismoSport], degree=2}
+
+> ==>{v=v[GravityRush], degree=2}
+
+> ==>{v=v[TombRaider], degree=2}
+
+> ==>{v=v[Knack], degree=2}
+
+> ==>{v=v[ARMS], degree=2}
+
+> ==>{v=v[Mario+Rabbids], degree=2}
+
+> ==>{v=v[Fifa18], degree=1}
+
+> ==>{v=v[Nioh], degree=1}
+
+> ==>{v=v[CallOfDutyBO4], degree=1}
 
 7. Devuelve solo los vértices que son juegos:
 
@@ -91,18 +110,30 @@ g.V().hasLabel('game')
 ```
 
 > ==>v[Mario+Rabbids]
-==>v[ARMS]
-==>v[HorizonZeroDawn]
-==>v[GranTurismoSport]
-==>v[Ratchet&Clank]
-==>v[Fifa18]
-==>v[GravityRush]
-==>v[Nioh]
-==>v[TombRaider]
-==>v[CallOfDutyBO4]
-==>v[Knack]
-==>v[SuperMarioOdyssey]
-==>v[MarioKart8]
+
+> ==>v[ARMS]
+
+> ==>v[HorizonZeroDawn]
+
+> ==>v[GranTurismoSport]
+
+> ==>v[Ratchet&Clank]
+
+> ==>v[Fifa18]
+
+> ==>v[GravityRush]
+
+> ==>v[Nioh]
+
+> ==>v[TombRaider]
+
+> ==>v[CallOfDutyBO4]
+
+> ==>v[Knack]
+
+> ==>v[SuperMarioOdyssey]
+
+> ==>v[MarioKart8]
 
 8. Devuelve solo los vértices que son jugadores:
 
@@ -148,14 +179,22 @@ g.V().hasLabel('game').has('GameTitle','MarioKart8').inE('likes').values('weight
 g.V().has('GamerAlias','skywalker123').as('gamer').out('likes')
 ```
 > ==>v[HorizonZeroDawn]
-==>v[GranTurismoSport]
-==>v[Ratchet&Clank]
-==>v[Fifa18]
-==>v[GravityRush]
-==>v[SuperMarioOdyssey]
-==>v[MarioKart8]
-==>v[ARMS]
-==>v[Mario+Rabbids]
+
+> ==>v[GranTurismoSport]
+
+> ==>v[Ratchet&Clank]
+
+> ==>v[Fifa18]
+
+> ==>v[GravityRush]
+
+> ==>v[SuperMarioOdyssey]
+
+> ==>v[MarioKart8]
+
+> ==>v[ARMS]
+
+> ==>v[Mario+Rabbids]
 
 14. ¿Qué juegos le gusta a skywalker123 usar el peso (mayor que)?
 
@@ -163,7 +202,8 @@ g.V().has('GamerAlias','skywalker123').as('gamer').out('likes')
 g.V().has('GamerAlias','skywalker123').outE("likes").has('weight', P.gt(0.7f))
 ```
 > ==>e[e17][Luke-likes->Mario+Rabbids]
-==>e[e3][Luke-likes->Ratchet&Clank]
+
+> ==>e[e3][Luke-likes->Ratchet&Clank]
 
 15. ¿Qué juegos le gusta a skywalker123 usar el peso (menos que)?
 
@@ -171,10 +211,14 @@ g.V().has('GamerAlias','skywalker123').outE("likes").has('weight', P.gt(0.7f))
 g.V().has('GamerAlias','skywalker123').outE("likes").has('weight', P.lt(0.5f))
 ```
 > ==>e[e1][Luke-likes->HorizonZeroDawn]
-==>e[e2][Luke-likes->GranTurismoSport]
-==>e[e4][Luke-likes->Fifa18]
-==>e[e5][Luke-likes->GravityRush]
-==>e[e21][Luke-likes->MarioKart8]
+
+> ==>e[e2][Luke-likes->GranTurismoSport]
+
+> ==>e[e4][Luke-likes->Fifa18]
+
+> ==>e[e5][Luke-likes->GravityRush]
+
+> ==>e[e21][Luke-likes->MarioKart8]
 
 16. ¿A quién más le gustan los mismos juegos que al jugador skywalker123?
 
@@ -182,9 +226,12 @@ g.V().has('GamerAlias','skywalker123').outE("likes").has('weight', P.lt(0.5f))
 g.V().has('GamerAlias','skywalker123').out('likes').in('likes').dedup().values('GamerAlias')
 ```
 > ==>forchinet
-==>skywalker123
-==>bringit32
-==>smiles007
+
+> ==>skywalker123
+
+> ==>bringit32
+
+> ==>smiles007
 
 17. ¿A quién más le gustan estos juegos sin incluirse a uno mismo (skywalker123)?
 
@@ -192,8 +239,10 @@ g.V().has('GamerAlias','skywalker123').out('likes').in('likes').dedup().values('
 g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').in('likes').where(neq('TargetGamer')).dedup().values('GamerAlias')
 ```
 > ==>forchinet
-==>bringit32
-==>smiles007
+
+> ==>bringit32
+
+> ==>smiles007
 
 18. ¿Cuáles son los otros títulos de juegos que les gustan a otros jugadores, que tienen en común?
 
@@ -201,17 +250,28 @@ g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').in('likes'
 g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').in('likes').where(neq('TargetGamer')).out('likes').dedup().values('GameTitle')
 ```
 > ==>HorizonZeroDawn
-==>GranTurismoSport
-==>Nioh
-==>TombRaider
-==>CallOfDutyBO4
-==>SuperMarioOdyssey
-==>MarioKart8
-==>ARMs
-==>Mario+Rabbids
-==>Ratchet&Clank
-==>GravityRush
-==>Knack
+
+> ==>GranTurismoSport
+
+> ==>Nioh
+
+> ==>TombRaider
+
+> ==>CallOfDutyBO4
+
+> ==>SuperMarioOdyssey
+
+> ==>MarioKart8
+
+> ==>ARMs
+
+> ==>Mario+Rabbids
+
+> ==>Ratchet&Clank
+
+> ==>GravityRush
+
+> ==>Knack
 
 19. ¿Qué juegos podrían tener sentido recomendar a un jugador específico que actualmente no le gusta?
 
@@ -219,8 +279,11 @@ g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').in('likes'
 g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').aggregate('self').in('likes').where(neq('TargetGamer')).out('likes').where(without('self')).dedup().values('GameTitle')
 ```
 > ==>Nioh
-==>TombRaider
-==>CallOfDutyBO4
-==>Knack
+
+> ==>TombRaider
+
+> ==>CallOfDutyBO4
+
+> ==>Knack
 
 
