@@ -3,7 +3,7 @@
 ```
 g.V().hasId('Luke').valueMap()
 ```
-==>{GamerAlias=[skywalker123]}
+> ==>{GamerAlias=[skywalker123]}
 
 ```
 g.V().has("GamerAlias","skywalker123").valueMap()
@@ -21,11 +21,11 @@ g.V().has('GamerAlias','skywalker123')
 g.E().limit(5)
 ```
 
-==>e[e25][Luke-likes->SuperMarioOdyssey]
-==>e[e26][Mike-likes->SuperMarioOdyssey]
-==>e[e8][Mike-likes->CallOfDutyBO4]
-==>e[e1][Luke-likes->HorizonZeroDawn]
-==>e[e9][Mike-likes->GranTurismoSport]
+> ==>e[e25][Luke-likes->SuperMarioOdyssey]
+> ==>e[e26][Mike-likes->SuperMarioOdyssey]
+> ==>e[e8][Mike-likes->CallOfDutyBO4]
+> ==>e[e1][Luke-likes->HorizonZeroDawn]
+> ==>e[e9][Mike-likes->GranTurismoSport]
 
 3. Muestra algunos de los vértices (límite 4):
 
