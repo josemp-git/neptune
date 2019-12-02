@@ -1,6 +1,6 @@
 Amazon Neptune proporciona un endpoint HTTPS para consultas de Gremlin. La interfaz REST es compatible con Gremlin versión 3.4.1.
 
-Los siguientes ejemplos usan ***curl*** para enviar una consulta Gremlin a través de HTTP ***POST**. La consulta se envía en formato JSON en el cuerpo del post. Antes de lanzar cada uno de los comandos, sustituya ***su-endpoint-neptune*** por el valor de ***DBClusterEndpoint***.
+Los siguientes ejemplos usan ***curl*** para enviar una consulta Gremlin a través de HTTP ***POST***. La consulta se envía en formato JSON en el cuerpo del post. Antes de lanzar cada uno de los comandos, sustituya ***su-endpoint-neptune*** por el valor de ***DBClusterEndpoint***.
 
 1. Dentro de su instancia EC2 ejecute los comandos. Si aún se encuentra dentro de la consola de Gremlin, ejecute el siguiente comando para salir:
 
@@ -21,12 +21,8 @@ curl -X POST -d '{"gremlin":"g.E().limit(5)"}' https://su-endpoint-neptune:8182/
 
 ```
 
+
 También puede enviar consultas a través de solicitudes HTTP ***GET***:
-
-```
-curl -G "https://su-endpoint-neptune:8182?gremlin=g.V().hasLabel('game')"
-
-```
 
 4. Devuelve solo los vértices que son juegos:
 

@@ -1,10 +1,10 @@
-1. Ejecute siguiente para instalar el paquete gremlinpython:
+1. Ejecute el siguiente comando para instalar el paquete gremlinpython en su instancia EC2:
 
 ```
 sudo pip install gremlinpython
 ```
 
-2. Ejecute el siguiente comando para guardar el código como ***gremlin.py***:
+2. Ejecute el siguiente comando para guardar su código Python como ***gremlin.py***:
 
 ```
 echo "from __future__  import print_function  # Python 2/3 compatibility
