@@ -1,4 +1,4 @@
-1. Estando conectado en la instancia de EC2, ejecute el siguiente comando y asegúrese que el valor de ***hosts*** sea su cluster de Neptune (DBClusterEndpoint) :
+1. Estando conectado en la instancia de EC2, ejecute el siguiente comando y asegúrese que el valor de ***hosts*** corresponda a su cluster de Neptune (DBClusterEndpoint) :
 
 ```
 cat ~/ apache-tinkerpop-gremlin-console-3.4.1/conf/neptune-remote.yaml

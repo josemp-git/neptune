@@ -141,9 +141,12 @@ g.V().hasLabel('game')
 g.V().hasLabel('person')
 ```
 > ==>v[Luke]
-==>v[Emma]
-==>v[Lina]
-==>v[Mike]
+
+> ==>v[Emma]
+
+> ==>v[Lina]
+
+> ==>v[Mike]
 
 9. Recuento de juegos agrupados por género de juego:
 
