@@ -1,3 +1,5 @@
+La siguiente módulo lo guía a través de la ejecución de un código de Python que se conecta a una instancia de Amazon Neptune y realiza un recorrido de Gremlin.
+
 1. Ejecute el siguiente comando para instalar el paquete gremlinpython en su instancia EC2:
 
 ```
