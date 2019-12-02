@@ -25,7 +25,7 @@ nav:
     - Inicio: index.md
     - 1. Preparación del ambiente: setup.md
     - 2. Cargar datos en Neptune: cargardatos.md
-    - 3. Conección con Neptune: connect.md
+    - 3. Conectar con Neptune: connect.md
     - 4. Consultas con Gremlin: gremlin.md
     - 5. HTTPS REST Endpoint: rest.md
     - 6. Integración con Python: python.md
