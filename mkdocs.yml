@@ -1,6 +1,6 @@
 # Project information
 
-site_name: CloudEndure Lab
+site_name: Laboratorio de Amazon Neptune
 site_description: 'En este laboratorio usted recorrerá las preferencias de juegos de consola de un conjunto de datos de jugadores y juegos utilizando Amazon Neptune y Gremlin.'
 #site_author: 'josepenu@amazon.com'
 site_url: 'http://neptune.oldschool.cloud'
