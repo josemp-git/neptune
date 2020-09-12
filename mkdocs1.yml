@@ -1,7 +1,7 @@
 # Project information
 
-site_name: CloudEndure Lab
-site_description: 'En este laboratorio usted recorrerá las preferencias de juegos de consola de un conjunto de datos de jugadores y juegos utilizando Amazon Neptune y Gremlin.'
+site_name: Amazon Neptune Lab
+site_description: 'Amazon Neptune Lab'
 #site_author: 'josepenu@amazon.com'
 site_url: 'http://neptune.oldschool.cloud'
 
@@ -9,19 +9,17 @@ site_url: 'http://neptune.oldschool.cloud'
 #repo_name: 'name'
 repo_url: 'https://github.com/josemp-git/neptune'
 
-google_analytics: ['UA-177862521-1', 'neptune.oldschool.cloud']
+google_analytics: ['UA-147241276-2', 'neptune.oldschool.cloud']
 
 # Copyright
-copyright: '&copy; 2020 - José Peñúñuri '
+copyright: '&copy; 2019 - José Peñúñuri '
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/josemp-git
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/jose_penunuri
-    - icon: fontawesome/solid/home
-      link: http://neptune.oldschool.cloud
+    - type: 'home'
+      link: 'http://neptune.oldschool.cloud'
+    - type: 'twitter'
+      link: 'https://twitter.com/jose_penunuri'
 
 nav:
     - Inicio: index.md
@@ -32,13 +30,12 @@ nav:
     - 5. HTTPS REST Endpoint: rest.md
     - 6. Integración con Python: python.md
 theme:
-  name: material
+  name: 'material'
   palette:
-    primary: Green
-    accent: orange
-  icon:
-    logo: fontawesome/brands/aws
-    repo: fontawesome/brands/git-alt
+    primary: 'Green'
+    accent: 'Orange'
+  logo:
+    icon: 'cloud_done'
 markdown_extensions:
   - codehilite:
       linenums: true

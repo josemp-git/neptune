@@ -6,9 +6,6 @@ Lo primero que debe hacer es crear un key pair. Este key pair le permitirá acce
 2. Haga click en **_Services_** y posteriormente seleccione el servicio de [**_EC2_**](https://console.aws.amazon.com/ec2/) el cual se encuentra bajo la categoría de **_Compute_** - **_https://console.aws.amazon.com/ec2/_**.
 3. Una vez en EC2, haga click en la sección de **_Key Pairs_** que se encuentra en el menú de la izquierda.
 5. Haga click en **_Create key pair_**.
-
-![Create Key Pair](images/keypair.png)
-
 6. En el campo de **_Key pair name_** ingrese un nombre para su key pair (ejemplo: **_neptune-lab_**).
 7. Haga click en **_Create_** y guarde el archivo que se va a descargar.
 
