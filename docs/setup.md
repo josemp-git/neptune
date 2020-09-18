@@ -26,9 +26,10 @@ https://s3.amazonaws.com/aws-neptune-customer-samples/v2/cloudformation-template
 12.	En el campo de **_Stack name_** escriba **_Neptune-Lab_**.
 13.	En la sección de **_Parameters_** defina los siguientes valores:
 
-* **DbInstanceType** - *db.r4.large*
+* **DbInstanceType** - *db.r5.large*
 * **EC2ClientInstanceType** - *t3.micro*
 * **EC2SSHKeyPairName** - *Elija la llave que creó anteriormente (neptune-lab)*
+* **NotebookInstanceType** - *ml.t2.medium*
 * **SetupGremlinConsole** - *true*
 * **SetupRDF4JConsole** - *true*
 
