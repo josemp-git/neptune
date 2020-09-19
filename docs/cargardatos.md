@@ -15,9 +15,6 @@
 10. Seleccione **_EC2 Instance Connect (browser-based SSH connection)_** y haga click en **_Connect_** para tener acceso a la instancia cliente vía SSH por medio del navegador web.
 
 ![Connect to Linux Server](images/connect.png)
-![EC2 CLI](images/ec2cli.png)
-
-**_*Nota._** Si por alguna razón no pudo conectarse a la instancia por medio de SSH via el navegador web (500 Server error), intente la opción de A standalone SSH client siguiendo las instrucciones que ahí se indican (terminal para usuarios Mac/Linux, putty para usuarios Windows).
 
 11. Una vez dentro de la instancia debe ejecutar el siguiente comando para cargar los datos del bucket de S3 en la base de datos de Neptune sustituyendo los siguiente parámetros:
 

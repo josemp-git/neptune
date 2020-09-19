@@ -3,7 +3,7 @@
 Lo primero que debe hacer es crear un key pair. Este key pair le permitirá acceder a las instancias que creará más adelante.
 
 1. Asegúrese de estar trabajando en la región de **_N. Virgina_**. Esto lo puede verificar en el menú desplegable que se encuentra en la esquina superior derecha de la consola de AWS.
-2. Haga click en **_Services_** y posteriormente seleccione el servicio de [**_EC2_**](https://console.aws.amazon.com/ec2/) el cual se encuentra bajo la categoría de **_Compute_** - **_https://console.aws.amazon.com/ec2/_**.
+2. Haga click en **_Services_** y posteriormente seleccione el servicio de [**_EC2_**](https://console.aws.amazon.com/ec2/) el cual se encuentra bajo la categoría de **_Compute_**.
 3. Una vez en EC2, haga click en la sección de **_Key Pairs_** que se encuentra en el menú de la izquierda.
 5. Haga click en **_Create key pair_**.
 6. En el campo de **_Key pair name_** ingrese un nombre para su key pair (ejemplo: **_neptune-lab_**).
@@ -14,7 +14,7 @@ Lo primero que debe hacer es crear un key pair. Este key pair le permitirá acce
 
 A continuación, desplegará una plantilla de CloudFormation que creará el cluster de Amazon Neptune y desplegará una instancia EC2 que funcionará como su consola.
 
-8. Haga click en **_Services_** y después en [**_CloudFormation_**](https://console.aws.amazon.com/cloudformation/) que se encuentra bajo la categoría de **_Management & Governance_** (también puede teclear CloudFormation en el campo de búsqueda) - **_https://console.aws.amazon.com/cloudformation/_**.
+8. Haga click en **_Services_** y después en [**_CloudFormation_**](https://console.aws.amazon.com/cloudformation/) que se encuentra bajo la categoría de **_Management & Governance_** (también puede teclear CloudFormation en el campo de búsqueda).
 9. Haga click en **_Create stack_**.
 10.	En el campo de **_Amazon S3 URL_** ingrese la siguiente URL: 
 
@@ -31,7 +31,6 @@ https://s3.amazonaws.com/aws-neptune-customer-samples/v2/cloudformation-template
 * **EC2SSHKeyPairName** - *Elija la llave que creó anteriormente (neptune-lab)*
 * **NotebookInstanceType** - *ml.t2.medium*
 * **SetupGremlinConsole** - *true*
-* **SetupRDF4JConsole** - *true*
 
 14.	Haga click en **_Next_**.
 15.	En la siguiente pantalla haga click de nuevo en **_Next_**.
