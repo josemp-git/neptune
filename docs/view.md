@@ -12,7 +12,7 @@
 
 ![](images/neptune-nb-02.png)
 
-6. Encontrara dos folders. Seleccione el que se llama **_02-Visuzalization_**
+6. Encontrara dos folders. Seleccione el que se llama **_02-Visualization_**,
 
 ![](images/neptune-nb-03.png)
 
@@ -20,7 +20,7 @@
 
 ![](images/neptune-nb-04.png)
 
-18. Por ahora usaremos el cuaderno [**_Videojuegos-Gremlin-Visualizacion.ipynb_**](https://console.aws.amazon.com/neptune/). Descarguelo en su equipo personal y ahora procederemos a cargarlo en el directorio de Jupyter Lab.
+18. Por ahora usaremos el cuaderno [**_Videojuegos-Gremlin-Visualizacion.ipynb_**](https://github.com/josemp-git/neptune/blob/master/docs/Videojuegos-Gremlin-Visualizacion.ipynb). Descarguelo en su equipo personal y ahora procederemos a cargarlo en el directorio de Jupyter Lab.
 
 ![](images/neptune-nb-05.png)
 
