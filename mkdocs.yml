@@ -29,7 +29,7 @@ nav:
     - 2. Cargar datos en Neptune: cargardatos.md
     - 3. Conectar con Neptune: connect.md
     - 4. Consultas con Gremlin: gremlin.md
-    - 5. Visualización con Amazon SageMaker: view.md
+    - 5. Visualización con Jupyter: view.md
     - 6. HTTPS REST Endpoint: rest.md
     - 7. Integración con Python: python.md
 theme:

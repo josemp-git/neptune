@@ -1,4 +1,4 @@
-1. Haga click en **_Services_** y posteriormente seleccione el servicio de [**_Amazon Neptune_**](https://console.aws.amazon.com/neptune/) el cual se encuentra bajo la categoría de **_Machine Learning_**.
+1. Haga click en **_Services_** y posteriormente seleccione el servicio de [**_Amazon Neptune_**](https://console.aws.amazon.com/neptune/) el cual se encuentra bajo la categoría de **_Database_**.
 
 2. Haga cick en **_Notebooks_** en el menú lateral izquierdo.
 
@@ -8,7 +8,7 @@
 
 ![](images/neptune-nb-01.png)
 
-5. Una vez abierto el cuaderno de jupyter, hacer clic en el cuaderno de **_Neptune**_.
+5. Una vez abierto el cuaderno de Jupyter, hacer clic en el cuaderno de **_Neptune_**.
 
 ![](images/neptune-nb-02.png)
 
