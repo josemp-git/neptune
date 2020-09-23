@@ -1,4 +1,5 @@
-En este módulo, usted recorrerá las preferencias de juegos de consola entre un pequeño conjunto de jugadores y juegos. Explorará los puntos en común, las preferencias y hará posibles recomendaciones de juegos. Estas consultas tienen el propósito de aprender Gremlin y Amazon Neptune.
+En este módulo, usted recorrerá las preferencias de video juegos entre un pequeño conjunto de jugadores y juegos. Usted explorará los puntos en común, las preferencias y hará posibles recomendaciones de juegos. Para este módulo debe estar conectado a su cluster de Neptune desde su instancia EC2 tal como lo hizo en el [**_módulo anterior_**](gremlin).
+
 
 ![Graph](images/graph.jpg)
 
@@ -289,4 +290,5 @@ g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').aggregate(
 
 > ==>Knack
 
+Proceda al [**_siguiente módulo_**](view).
 

@@ -1,17 +1,17 @@
-1. Descargue los siguientes archivos:
+1. Descargue los siguientes archivos en su computadora:
 
       * [**vertex.txt**](http://neptune.oldschool.cloud/vertex.txt)
 
       * [**edges.txt**](http://neptune.oldschool.cloud/edges.txt)
 
-2. Diríjase a la consola de AWS y haga click en **_Services_** y posteriormente seleccione el servicio de [**_S3_**](https://s3.console.aws.amazon.com/) el cual se encuentra bajo la categoría de **_Storage_** (**_https://s3.console.aws.amazon.com/_**).
+2. Diríjase a la consola de AWS y haga click en **_Services_** y posteriormente seleccione el servicio de [**_S3_**](https://s3.console.aws.amazon.com/) el cual se encuentra bajo la categoría de **_Storage_**.
 3. Haga clicl en el bucket que creó anteriormente.
 4. Haga click en ***Upload*** y seleccione los dos archivos que acaba de descargar.
 5. Haga click en ***Upload***.
-6. Haga click en **_Services_** y posteriormente seleccione el servicio de **_EC2_** el cual se encuentra bajo la categoría de **_Compute_**.
+6. Haga click en **_Services_** y posteriormente seleccione el servicio de [**_EC2_**](https://console.aws.amazon.com/ec2/) el cual se encuentra bajo la categoría de **_Compute_**.
 7. Haga click en **_Running instances_**.
 8. Seleccione la casilla que se encuentra a lado de la instancia **_Neptune-test_**.
-9. Haga click en **_Connect_**.
+9. Haga click en el botón **_Connect_** (o **_Actions_** y después **_Connect_**).
 10. Seleccione **_EC2 Instance Connect (browser-based SSH connection)_** y haga click en **_Connect_** para tener acceso a la instancia cliente vía SSH por medio del navegador web.
 
 ![Connect to Linux Server](images/connect.png)
@@ -35,11 +35,11 @@ curl -X POST \
       "failOnError" : "FALSE"
     }'
 ```
-Si todo fue ejecutado correctamente deberá ver un mensaja de ***"status" : "200 OK"***.
+Si todo fue ejecutado correctamente deberá ver un mensaje de ***"status" : "200 OK"***.
 
 !["status" : "200 OK"](images/status200ok.png)
 
-12. De la ejecución del comando anterior, guarde el valor de ***"loadId"***.
+12. De la ejecución del comando anterior, guarde el valor de ***"loadId"*** en un editor de texto.
 13. Verifique el status de su carga ejecutando el siguiente comando sustituyendo ***your-neptune-endpoint*** por el valor de ***DBInstanceEndpoint*** y ***[loadId value]*** por el valor de ***loadId*** del comando que ejecutó anteriormente:
 
 ```
@@ -47,3 +47,5 @@ curl http://your-neptune-endpoint:8182/loader?loadId=[loadId value]
 ```
 
 !["status" : "Load Completed"](images/loadcompleted.png)
+
+Proceda al [**_siguiente módulo_**](connect).

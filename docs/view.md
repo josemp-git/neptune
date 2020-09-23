@@ -2,31 +2,34 @@
 
 2. Haga cick en **_Notebooks_** en el menú lateral izquierdo.
 
-3. Seleccione el cuaderno asociado a al cluster de Neptune.
+3. Seleccione la casilla del cuaderno asociado a al cluster de Neptune.
 
 4. Haga click en el boton **_Open notebook_** con lo que se abrira una nueva ventana de **_Jupyter_**.
 
 ![](images/neptune-nb-01.png)
 
-5. Una vez abierto el cuaderno de Jupyter, hacer clic en el cuaderno de **_Neptune_**.
+5. Una vez abierto el cuaderno de Jupyter, haga click en el directorio de **_Neptune_**.
 
 ![](images/neptune-nb-02.png)
 
-6. Encontrara dos folders. Seleccione el que se llama **_02-Visualization_**,
+6. Haga click en el directorio de **_02-Visualization_**,
 
 ![](images/neptune-nb-03.png)
 
-7. Dentro de este directorio encontrara dos cuadernos que contienen un ejercicio mas avanzado sobre visualizacion basado en un dataset de Rutsas Aereas (**_Air-Routes-Gremlin.ipynb_** y **_Air-Routes-SPARQL.ipynb_**). Estos podra ocuparlos si requiere mas detalle y opciones de visualizacion en Neptune. 
+Dentro de este directorio encontrará dos cuadernos que contienen un ejercicio mas avanzado sobre visualizacion basado en un conjunto de datos de rutas aereas (**_Air-Routes-Gremlin.ipynb_** y **_Air-Routes-SPARQL.ipynb_**). Se recomienda utilizar estos cuadernos si requiere profundizar y conocer más detalle las opciones de visualizacion que ofrece Amazon Neptune. 
 
 ![](images/neptune-nb-04.png)
 
-18. Por ahora usaremos el cuaderno [**_Videojuegos-Gremlin-Visualizacion.ipynb_**](Videojuegos-Gremlin-Visualizacion.ipynb). Descarguelo en su equipo personal y ahora procederemos a cargarlo en el directorio de Jupyter Lab.
+7. Para este laboratorio usará el cuaderno [**_Videojuegos-Gremlin-Visualizacion.ipynb_**](Videojuegos-Gremlin-Visualizacion.ipynb). Descárguelo en su equipo personal.
 
 ![](images/neptune-nb-05.png)
 
-8. Haga clic en el boton de **_Upload_**, seleccione el cuaderno **_Videojuegos-Gremlin-Visualizacion.ipynb_** que acaba de descargar y de Upload de nuevo.
+8. Haga clic en el boton de **_Upload_**, seleccione el cuaderno **_Videojuegos-Gremlin-Visualizacion.ipynb_** que acaba de descargar y haga click de nuevo en **_Upload_**.
 
 ![](images/neptune-nb-06.png)
 
-9.Una vez cargado, seleccione el cuaderno haciendo clic sobre el mismo. Siga los pasos que vienen en el cuaderno.
+9. Una vez cargado, seleccione el cuaderno haciendo click sobre el mismos y ejecute los pasos que aparecen en el cuaderno.
 
+Una vez concluida la actividad en el cuadernos de Jupyter, proceda al [**_siguiente módulo_**](rest).
+
+Proceda al [**_siguiente módulo_**](python).

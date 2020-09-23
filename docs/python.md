@@ -33,3 +33,5 @@ python gremlinexample.py
 ```
 
 La consulta de Gremlin al final de este ejemplo devuelve los vértices (g.V (). Limit (5)) en una lista. Esta lista se imprime con la función de impresión estándar de Python.
+
+### Fin del laboratorio

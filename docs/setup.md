@@ -59,3 +59,5 @@ En los siguientes pasos creará un bucket de S3 en donde almacenará los datos q
 ![Create bucket](images/createbucket.png)
 
 24. Guarde el nombre de su bucket en un editor de texto ya que lo utilizará más tarde.
+
+Proceda al [**_siguiente módulo_**](cargardatos).
