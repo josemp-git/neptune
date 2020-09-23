@@ -290,5 +290,5 @@ g.V().has('GamerAlias','skywalker123').as('TargetGamer').out('likes').aggregate(
 
 > ==>Knack
 
-Proceda al [**_siguiente módulo_**](view).
+Proceda al [**_siguiente módulo_**](/view).
 

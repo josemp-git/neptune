@@ -43,3 +43,5 @@ curl -G "https://su-endpoint-neptune:8182?gremlin=g.V().hasLabel('person')"
 ```
 curl -G "https://su-endpoint-neptune:8182?gremlin=g.V().has('GamerAlias','skywalker123').as('gamer').out('likes')"
 ```
+
+Proceda al [**_siguiente módulo_**](/python).

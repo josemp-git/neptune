@@ -37,7 +37,7 @@ Deberá ver la siguiente pantalla:
 g.V().limit(1)
 ```
 
-7. Proceda al [**_siguiente módulo_**](gremlin).
+7. Proceda al [**_siguiente módulo_**](/gremlin).
 
 8. ***Opcional***: si requiere salir de la consola de Gremlin, ejecute el siguiente comando en el prompt:
 

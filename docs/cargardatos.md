@@ -48,4 +48,4 @@ curl http://your-neptune-endpoint:8182/loader?loadId=[loadId value]
 
 !["status" : "Load Completed"](images/loadcompleted.png)
 
-Proceda al [**_siguiente módulo_**](connect).
+Proceda al [**_siguiente módulo_**](/connect).
