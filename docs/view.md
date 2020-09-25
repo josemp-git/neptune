@@ -20,4 +20,16 @@
 
 ![](images/neptune-nb-06.png)
 
+10. Algunos de los pasos del cuaderno incluye las mismas consultas que vimos en pasos anteriores.
+
+![](images/neptune-nb-07.png)
+
+11. En otros pasos tendremos ejemplos de visualizaciones.
+
+![](images/neptune-nb-08.png)
+
+12. Con sus respectivas visualizaciones.
+
+![](images/neptune-nb-09.png)
+
 Una vez concluida la actividad en el cuadernos de Jupyter, proceda al [**_siguiente módulo_**](/rest).
